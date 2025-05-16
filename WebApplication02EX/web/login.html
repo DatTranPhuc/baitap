@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Demo</title>
+        <link rel="stylesheet" href="assets/CSS/styles.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <h1>HTML Forms</h1>
+            <form action="index.html">
+                <label>Textbox</label>
+                <input type="text" name="txtText" size="5" />
+
+                <label>Password</label>
+                <input type="password" name="textPassword" />
+
+                <label>Hidden</label>
+                <input type="hidden" name="txtHidden" value="hiddenValue" />
+
+                <label><input type="checkbox" name="chkCheck" value="ON" checked> Male</label>
+
+                <div class="radio-group">
+                    <label>Status:</label>
+                    <label><input type="radio" name="rdoStatus" value="Single" checked> Single</label>
+                    <label><input type="radio" name="rdoStatus" value="Married"> Married</label>
+                    <label><input type="radio" name="rdoStatus" value="Divorsed"> Divorsed</label>
+                </div>
+
+                <label>ComboBox</label>
+                <select name="txtCombo">
+                    <option value="Serviet">JSP and Serviet</option>
+                    <option value="EJB">EJB</option>
+                    <option value="Java">Core Java</option>
+                </select>
+
+                <label>Multiple</label>
+                <select name="txtList" multiple size="3">
+                    <option value="Serviet" selected>JSP and Serviet</option>
+                    <option value="EJB" selected>EJB</option>
+                    <option value="Java">Core Java</option>
+                </select>
+
+                <label>TextArea</label>
+                <textarea name="txtArea" rows="4" cols="20">This is form parameter demo!!!!</textarea>
+
+                <div class="button-group">
+                    <input type="submit" name="txtB" value="Submit" />
+                    <input type="submit" value="Register" name="action" />
+                    <input type="reset" name="txtB" value="Reset"/>
+                    <input type="button" value="JavaScript" name="txtB" onclick="alert('JavaScript button clicked!')" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
